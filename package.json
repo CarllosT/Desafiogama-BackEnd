@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "dev": "nodemon src/server"
   },
   "repository": {
     "type": "git",
@@ -20,5 +19,9 @@
   "homepage": "https://github.com/CarllosT/Desafiogama-BackEnd#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14",
+    "sucrase": "^3.20.3"
   }
 }
