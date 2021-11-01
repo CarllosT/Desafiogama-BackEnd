@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/CarllosT/Desafiogama-BackEnd/issues"
   },
-  "homepage": "https://github.com/CarllosT/Desafiogama-BackEnd#readme"
+  "homepage": "https://github.com/CarllosT/Desafiogama-BackEnd#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
