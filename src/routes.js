@@ -11,5 +11,6 @@ routes.post('/user', UserController.store);
 
 routes.post('/session', SessionControler.store);
 
+routes.put('/user', UserController.update)
 
 export default routes;
