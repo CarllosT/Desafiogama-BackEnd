@@ -4,7 +4,7 @@ import UserController from './app/controllers/UserController'
 import SessionControler from './app/controllers/SessionController'
 
 routes.get('/', (req, res) => {
-    res.json({ message: 'ok'})
+    res.sendFile(__dirname + "/pages/index.html");
 })
 
 routes.post('/user', UserController.store);
