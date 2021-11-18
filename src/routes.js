@@ -2,6 +2,7 @@ import express from 'express';
 const routes = express();
 import UserController from './app/controllers/UserController';
 import SessionControler from './app/controllers/SessionController';
+import ContatoController from './app/controllers/ContactController';
 //import Tratativa from './tratativa';
 
 routes.use(express.static(__dirname + '/pages/assets/js/'));
@@ -19,11 +20,8 @@ routes.get('/', (req, res) => {
     res.render(__dirname + "/pages/home");
 });
 
-routes.post('/tratativa', (req,res) =>{
-    console.log(req.body); 
-});
-
 routes.post('/user', UserController.store);
+routes.post('/Contato', ContatoController.store);
 
 routes.post('/session', SessionControler.store);
 

@@ -25,10 +25,10 @@
         <!-- Campo Login -->
         <div class="div-login">
             <h2 class="title text-center">Você ja tem uma conta? FAÇA SEU LOGIN AQUI</h2>
-            <form class="row form-login" method="POST" action="/tratativa" >
+            <form id="form1" class="row form-login" method="POST" action="/session" >
                 <div class="col">
                     <label for="login" class="form-label">Login</label>
-                    <input name="login" id="login" class="form-control"  type="email" required>
+                    <input name="email" id="email" class="form-control"  type="email" required>
                 </div>
                 <div class="col">
                     <label for="password" class="form-label">Senha</label>
@@ -43,7 +43,8 @@
         <!-- Campo Formulário-->
         <div class="div-registry">
             <h2 class="title text-center">Você ainda não tem uma conta? REGISTRE-SE AGORA</h2>
-            <form class="row form-registry" action="#">
+            <form id="form2" class="row form-registry" method="POST" action="/contato">
+
                 <p class="subtitle">Dados Pessoais</p>
 
                 <div class="col-md-4">
@@ -63,7 +64,7 @@
                     <label for="phone" class="form-label">Telefone</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">+55</span>
-                        <input name="phone" id="phone" class="input-telefone form-control" type="tel" placeholder=" (00) 0000-0000" required>
+                        <input name="telefone" id="telefone" class="input-telefone form-control" type="tel" placeholder=" (00) 0000-0000" required>
                     </div>
                 </div>
                  <div class="col-md-3 margin-form">
@@ -86,7 +87,7 @@
                 </div>
                 <div class="col-md-3 margin-form">
                     <label for="number" class="form-label">Numero</label>
-                    <input  name="number" id="number" class="form-control"  type="number" required>
+                    <input  name="numero" id="numero" class="form-control"  type="number" required>
                 </div> 
                 <div class="col-md-5 margin-form">
                     <label for="bairro" class="form-label">Bairro</label>
@@ -98,7 +99,7 @@
                 </div>
                 <div class="col-md-4 margin-form">
                     <label for="localidade" class="form-label">Cidade</label>
-                    <input  name="localidade"id="localidade" class="form-control"  type="text" required>
+                    <input  name="cidade"id="cidade" class="form-control"  type="text" required>
                     <div class="invalid-feedback">
                         Please select a valid state.
                       </div>
@@ -108,22 +109,22 @@
 
                 <div class="col-md-6">
                     <label for="category" class="form-label">Categoria</label>
-                    <select  name="category"id="category" class="form-select">
+                    <select  name="categoria"id="categoria" class="form-select">
                         <option selected>Selecione</option>
-                        <option></option>
+                        <option>teste</option>
                     </select>
                 </div>
 
                 <div class="col-md-6">
                     <label for="curse" class="form-label">Curso</label>
-                    <select  name="curse"id="curse" class="form-select">
+                    <select  name="curso"id="curso" class="form-select">
                         <option selected>Selecione</option>
-                        <option></option>
+                        <option>teste</option>
                     </select>
                 </div>
         
                 <div class="button-send text-center">
-                    <button type="button" class="btn btn-secondary">Enviar</button>
+                    <button type="submit" class="btn btn-secondary">Enviar</button>
                 </div> 
             </form>
         </div> 

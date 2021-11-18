@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    return queryInterface.createTable('contact',{
+    return queryInterface.createTable('contatos',{
       id: { 
         type: Sequelize.INTEGER,
         allowNull:false,
@@ -54,6 +54,14 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+      curso: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      categoria: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
       created_at: {
         type: Sequelize.DATE,
         allowNull: false,
@@ -67,6 +75,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('contact')
+    return queryInterface.dropTable('Contatos')
   }
 };
