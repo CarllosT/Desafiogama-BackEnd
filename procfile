@@ -1,1 +1,1 @@
-web: npm run devheroku logs --tail
+web: node src/server
