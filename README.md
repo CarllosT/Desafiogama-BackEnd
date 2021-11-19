@@ -100,4 +100,4 @@ Desenvolvedores do projeto:
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
-[⬆ Voltar ao topo](Desafiogama-BackEnd)<br>
+<img src="team.png" alt="team img">
