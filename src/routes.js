@@ -28,6 +28,4 @@ routes.post('/Contato', ContatoController.store);
 
 routes.post('/session', SessionControler.store);
 
-routes.put('/user', UserController.update)
-
 export default routes;

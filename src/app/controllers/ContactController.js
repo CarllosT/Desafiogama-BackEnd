@@ -6,7 +6,7 @@ class ContatoController  {
         const contactExists = await Contato.findOne({ where: { cpf: req.body.cpf}});
 
         if(contactExists){
-            return res.status(400).json ({ message: 'Contato já enviado!'})
+            return res.status(400).json ({ message: 'Contato já enviado com esses dados!'})
         }
 
 
